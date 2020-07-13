@@ -1,9 +1,8 @@
-# Flower Predictor: Project Overview 
-* This is the most famous example in the field of machine learning.
-* The aim is to classify iris flowers among three species (setosa, versicolor, or virginica) from measurements of length and width of sepals and petals.
-* The iris data set contains 3 classes of 50 instances each, where each class refers to a type of iris plant. 
-* The central goal here is to design a model that makes good classifications for new flowers or, in other words, one which exhibits good generalization 
-* Built a client facing API using flask 
+# Breast Cancer: 
+* This application detect whether the Mass in the breast is cancerous or not using Artificial Neural Network.
+* Its uses measurement of mass present is the report for analyzing the mass.
+* The patient can use this web application as a second opinion to confirm diagnosis.
+
 
 ## Code and Resources Used 
 **Python Version:** 3.8  
@@ -11,20 +10,18 @@
 **For Web Framework Requirements:**  ```pip install -r requirements.txt```  
 
 ## Data Set
-The data in in iris.csv. The number of columns is 5 and the number of rows is 150. The columns are:
-* sepal_length: Sepal length, in centimeters, used as input.
-* sepal_width: Sepal width, in centimeters, used as input.
-* petal_length: Petal length, in centimeters, used as input.
-* petal_width: Petal width, in centimeters, used as input.
-* class: Iris Setosa, Versicolor, or Virginica, used as the target.
-
+Dataset is downloaded from kaggle.com
+The data in in data.csv. The number of columns is 30 and the number of rows is 570. The columns are:
+For more detail info please visit : https://www.kaggle.com/uciml/breast-cancer-wisconsin-data
 ## Model Building 
 
 First, I have scaled the data with MinMaxScaler. I also split the data into train and tests sets with a test size of 20%.   
 
-I have applied Artificial Neural Network (ANN) with two layers:
-*	**Input Layer** – Units=4, activation=relu 
-*	**Output Layer** – Units=2, activation=softmax
+I have applied Artificial Neural Network (ANN) with four layers:
+*	**Input Layer** – Units=30, activation=relu 
+*	**Hidden Layer** – Units=10, activation=relu 
+*	**Hidden Layer** – Units=10, activation=relu 
+*	**Output Layer** – Units=1, activation=binary crossentropy
 
 I have also applied early stopping.
 
@@ -42,10 +39,10 @@ I have also applied early stopping.
  [ 1  7]]
 
 ## Productionization 
-In this step, I built a flask API endpoint that is hosted on Heroku. The API endpoint takes in a request with a list of values of flower measurements and returns the class of the flower.
+In this step, I built a flask API endpoint that is hosted on Heroku. The API endpoint takes in a request with a list of values of breast mass measurements and returns whether the mass is cancerous or not.
 
-**Application link:** https://flower-predictor.herokuapp.com/
+**Application link:** https://breastcancer-detector.herokuapp.com/
 
-![alt text](https://github.com/gjariwala9/Flower_Predictor/blob/master/README_IMG/form.png "Flower Measurements Form")
+![alt text](https://github.com/9harshit/Breast-Cancer-Detect-Using-ANN/blob/master/README_IMG/form.png "Breast Cancer Detect Form")
 
-![alt text](https://github.com/gjariwala9/Flower_Predictor/blob/master/README_IMG/prediction.png "Flower Prediction")
+![alt text](https://github.com/9harshit/Breast-Cancer-Detect-Using-ANN/blob/master/README_IMG/prediction.png "Result")
