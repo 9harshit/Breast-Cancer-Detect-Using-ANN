@@ -28,6 +28,9 @@ I have also applied early stopping.
 ## Model performance 
 *	**Validation loss** : 0.0115
 *	**Validation Accuracy** : 0.995 or 99.5%
+*	**Confusion matrix ** :
+[[64  3]
+ [ 3 44]]
 
 ## Productionization 
 In this step, I built a flask API endpoint that is hosted on Heroku. The API endpoint takes in a request with a list of values of breast mass measurements and returns whether the mass is cancerous or not.
