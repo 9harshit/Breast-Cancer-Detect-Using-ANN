@@ -1,4 +1,4 @@
-# Breast Cancer: 
+# Breast Cancer Detect: 
 * This application detect whether the Mass in the breast is cancerous or not using Artificial Neural Network.
 * Its uses measurement of mass present is the report for analyzing the mass.
 * The patient can use this web application as a second opinion to confirm diagnosis.
