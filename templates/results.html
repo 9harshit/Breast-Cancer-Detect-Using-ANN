@@ -1,6 +1,14 @@
 {% extends "layout.html" %}
 
 {% block content %}
+<style type="text/css">
+	div
+	{
+		top:50%;
+		position: relative;
+	}
+</style>
+<form action = "#" method="post">
 <div class = "result" align="center"> 
 	<h3 >Result</h3>
 {% if content == 1%}
@@ -8,6 +16,7 @@
 {% else %}
 <h3>Mass is not cancerous </h3>
 {% endif %}
-<button>Predict New Result</button>
+<button onclick="">Predict New Result</button>
 </div>
+</form>
 {% endblock %}
