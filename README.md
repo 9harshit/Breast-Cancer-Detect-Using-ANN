@@ -26,17 +26,8 @@ I have applied Artificial Neural Network (ANN) with four layers:
 I have also applied early stopping.
 
 ## Model performance 
-*	**Validation loss** : 0.35
-*	**Validation Accuracy** : 0.97 or 97%
-*	**Confusion matrix for label setosa** :
-[[20  0]
- [ 0 10]]
-*	**Confusion matrix for label versicolor** :
-[[17  1]
- [ 1 11]]
-*	**Confusion matrix for label virginica** :
-[[22  0]
- [ 1  7]]
+*	**Validation loss** : 0.0115
+*	**Validation Accuracy** : 0.995 or 99.5%
 
 ## Productionization 
 In this step, I built a flask API endpoint that is hosted on Heroku. The API endpoint takes in a request with a list of values of breast mass measurements and returns whether the mass is cancerous or not.
