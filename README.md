@@ -5,8 +5,8 @@
 
 
 ## Code and Resources Used 
-**Python Version:** 3.8  
-**Packages:** pandas, numpy, matplotlib, sklearn, tensorflow 2, flask, json, pickle  
+**Python Version:** 3.7  
+**Packages:** pandas, numpy, matplotlib, sklearn, tensorflow , flask, json, pickle  
 **For Web Framework Requirements:**  ```pip install -r requirements.txt```  
 
 ## Data Set
