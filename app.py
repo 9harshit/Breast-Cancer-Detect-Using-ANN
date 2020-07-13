@@ -58,9 +58,12 @@ def home():
         return render_template("home.html")
 
 
-@app.route("/results")
+@app.route("/results", methods = ["POST", "GET"])
 def results():
+    if request.method == "GET": 
             return render_template("results.html", content = session["result"])
+    else:
+        return redirect(url_for("home"))
 
 
 if __name__ == "__main__":
