@@ -8,9 +8,8 @@
 		position: relative;
 	}
 </style>
-<form action = "#" method="post">
-	 {# This hidden_tag is a CSRF security feature. #}
- {{ form.hidden_tag() }}
+<form action = "#" method="GET">
+	
 <div class = "result" align="center"> 
 	<h3 >Result</h3>
 {% if content == 1%}
