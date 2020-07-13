@@ -8,7 +8,7 @@ import joblib
 
 app = Flask(__name__)
 
-app.secret_key = "hello"
+app.config[‘SECRET_KEY’] = ‘someRandomKey’
 
 model = Sequential()
 
