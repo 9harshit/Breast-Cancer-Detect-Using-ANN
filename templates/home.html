@@ -25,6 +25,8 @@ input
 
 </style>
 	<form  action = "#" method = "POST">
+		 {# This hidden_tag is a CSRF security feature. #}
+ {{ form.hidden_tag() }}
 			<table align="center">
 		<tr >
 			<th colspan = 2><h4 align="center">Enter Data Of Your Report</h4></th>
