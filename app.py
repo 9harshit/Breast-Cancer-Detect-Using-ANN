@@ -16,21 +16,6 @@ def home():
     if request.method == "POST":
         data = np.zeros(30)
         j =0 
-        model = Sequential()
-
-        # Adding the input layer and the first hidden layer
-        model.add(Dense(units = 10, kernel_initializer = 'uniform', activation = 'relu', input_dim = 30))
-
-        # Adding the second hidden layer
-        model.add(Dense(units = 10, kernel_initializer = 'uniform', activation = 'relu'))
-
-        model.add(Dense(units = 10, kernel_initializer = 'uniform', activation = 'relu'))
-
-        # Adding the output layer
-        model.add(Dense(units = 1, kernel_initializer = 'uniform', activation = 'sigmoid'))
-
-        # Compiling the ANN
-        model.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
 
         model = load_model('breast_cancer_detect.h5')
 
