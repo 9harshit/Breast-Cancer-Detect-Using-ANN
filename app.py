@@ -16,7 +16,6 @@ def home():
     if request.method == "POST":
         data = np.zeros(30)
         j =0 
-
         model = load_model('breast_cancer_detect.h5')
 
         session.permanent = True
@@ -53,4 +52,4 @@ def results():
 
 
 if __name__ == "__main__":
-    app.run(threaded=True, port=5000)
+    app.run(debug = True)
